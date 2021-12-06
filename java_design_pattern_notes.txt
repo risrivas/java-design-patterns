@@ -2,7 +2,7 @@
 # SOLID Design Principles
 ##########################
 Single Responsibility Principle
-Open Closed Principle
+Open-Closed Principle
 Liskov Substitution Principle
 Interface Segregation Principle
 Dependency Inversion Principle
@@ -21,4 +21,31 @@ example:
 - if payload format changes from JSON to XML - class has to change
 - if authentication is added in server - class has to change
 => thus there are more than 1 reason for the class to change - breaks the SRP
+
+# Code: com.design.patterns.solid.singleresp
+- UserController - it has a single responsibility
+  - receive request and handover to other classes for business logic
+  - then get the result and ship the response back to the sender
+- Refactor it:
+  - move the validation to separate class
+  - move the user persistence to separate class
+
+
+########################
+# Open-Closed Principle
+########################
+- Software entities (classes, modules, methods, etc) should be open for extension but closed for modification
+- Open for extension => means extend existing behavior
+- Closed for modification => means existing code remains unchanged
+
+example:
+- there is a base class with methods
+- should be able to write a derived class and override methods (open for extension)
+- but should not be able to modify the base class methods (closed for modification)
+
+
+
+
+
+
 
