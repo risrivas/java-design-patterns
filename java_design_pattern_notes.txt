@@ -1,0 +1,24 @@
+##########################
+# SOLID Design Principles
+##########################
+Single Responsibility Principle
+Open Closed Principle
+Liskov Substitution Principle
+Interface Segregation Principle
+Dependency Inversion Principle
+
+
+########################################
+# Single Responsibility Principle (SRP)
+########################################
+- there should never be more than one reason for a class to change
+- focused, single functionality
+- addresses a specific concern
+
+example:
+- there is a class writing to a remote server
+- if protocol changes from HTTP to HTTPS - class has to change
+- if payload format changes from JSON to XML - class has to change
+- if authentication is added in server - class has to change
+=> thus there are more than 1 reason for the class to change - breaks the SRP
+
