@@ -43,6 +43,17 @@ example:
 - should be able to write a derived class and override methods (open for extension)
 - but should not be able to modify the base class methods (closed for modification)
 
+# Code: com.design.patterns.solid.openclose
+
+
+################################
+# Liskov Substitution Principle
+################################
+- should be able to substitute base class objects with child class objects
+- and this should not alter behavior/characteristics of program
+
+- so for a base class - if any methods are written
+- in the main class - we can call base object or derived object on these methods interchangeably without affecting the behavior
 
 
 
